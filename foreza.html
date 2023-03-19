@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Inchirieri utilaje</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href='https://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
+  </head>
+<body>
+  <header>
+    <nav id="header-nav" class="navbar navbar-default">
+      <div class="container">
+        <div class="navbar-header">
+          <a href="index.html" class="pull-left visible-md visible-lg">
+            <div id="logo-img"></div>
+          </a>
+
+          <div class="navbar-brand">
+            <a href="index.html"><h1>Inchirieri utilaje</h1></a>
+            <p>
+              <img src="images/star-k-logo.png" alt="Kosher certification">
+              <span>Calitate superioara</span>
+            </p>
+          </div>
+
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        
+        <div id="collapsable-nav" class="collapse navbar-collapse">
+           <ul id="nav-list" class="nav navbar-nav navbar-right">
+            <li class="visible-xs">
+              <a href="index.html">
+                <span class="glyphicon glyphicon-home"></span> Home</a>
+            </li>
+            <li class="active">
+              <a href="menu-categories.html">
+                <span class="glyphicon glyphicon-wrench"></span><br class="hidden-xs"> Utilaje</a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="glyphicon glyphicon-info-sign"></span><br class="hidden-xs"> Despre</a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="glyphicon glyphicon-certificate"></span><br class="hidden-xs"> Altele</a>
+            </li>
+            <li id="phone" class="hidden-xs">
+              <a href="tel:410-602-5008">
+                <span>+40 765 860 296</span></a>
+            </li>
+          </ul><!-- #nav-list -->
+        </div><!-- .collapse .navbar-collapse -->
+      </div><!-- .container -->
+    </nav><!-- #header-nav -->
+  </header>
+
+  <div id="call-btn" class="visible-xs">
+    <a class="btn" href="tel:410-602-5008">
+    <span class="glyphicon glyphicon-earphone"></span>
+    +40 765 860 296
+    </a>
+  </div>
+  
+  <div id="main-content" class="container">
+    <h2 id="menu-categories-title" class="text-center">Foreza</h2>
+    <div class="text-center">Modele disponibile</div>
+
+    <section class="row">
+      <div class="menu-item-tile col-md-6">
+        <div class="row">
+          <div class="col-sm-5">
+            <h3 class="menu-item-title">Foreza Active</h3>
+            <div class="menu-item-photo">
+              <div>U01</div>
+              <img class="img-responsive" width="250" height="150" src="images/categorii/foreza/active.jpg" alt="Item">
+            </div>
+            <div class="menu-item-price">
+               <button id="mostrar-precios" onclick="mostrarPrecios1()">Preturi</button>
+                 <div id="precios1">
+                   <ul class="demo">
+                     <li>50 RON ORA</li>
+                     <li>250 RON ZI</li>
+                     <li>1200 RON SAPTAMANA</li>
+                     <li>3000 RON LUNA</li>
+                   </ul>
+                 </div> 
+            </div>
+          </div>
+          <div class="menu-item-description col-sm-7">
+            <p class="menu-item-details">
+            <ul>
+             <li>Putere KW : 3.0</li>
+             <li>Capacitate cilindrica  cm³: 51,7</li> 
+             <li>Viteza RPM: 170</li>
+             <li>Greutate: 43 kg</li> 
+            </ul>
+            </p>
+          </div>
+        </div>
+        <hr class="visible-xs">
+      </div>
+
+
+      <div class="menu-item-tile col-md-6">
+        <div class="row">
+          <div class="col-sm-5">
+            <h3 class="menu-item-title">Foreza Stihl</h3>
+            <div class="menu-item-photo">
+              <div>U02</div>
+              <img class="img-responsive" width="250" height="150" src="images/categorii/foreza/stihl.jpg" alt="Item">
+            </div>
+             <div class="menu-item-price">
+               <button id="mostrar-precios" onclick="mostrarPrecios2()">Preturi</button>
+                 <div id="precios2">
+                   <ul class="demo">
+                     <li>45 RON ORA</li>
+                     <li>200 RON ZI</li>
+                     <li>1000 RON SAPTAMANA</li>
+                     <li>2500 RON LUNA</li>
+                   </ul>
+                 </div>
+             </div>
+          </div>
+          <div class="menu-item-description col-sm-7">
+            <p class="menu-item-details">
+            <ul>
+             <li>Putere KW : 1.4</li>
+             <li>Capacitate cilindrica  cm³: 36,3</li> 
+             <li>Viteza RPM: 200</li>
+             <li>Greutate: 10 kg</li>
+            </ul>
+            </p>
+          </div>
+        </div>
+        <hr class="visible-xs">
+      </div>
+      <!-- Add after every 2nd menu-item-tile -->
+      <div class="clearfix visible-lg-block visible-md-block"></div>
+
+      
+
+    </section>
+
+  
+  </div><!-- End of #main-content -->
+
+   <footer class="panel-footer">
+    <div class="container">
+      <div class="row">
+        <section id="hours" class="col-sm-4">
+          <span>Orar:</span><br>
+          Luni-Vineri: 08:00 - 20:00<br>
+          <br>
+          Weekend Inchis
+          <hr class="visible-xs">
+        </section>
+        <section id="address" class="col-sm-4">
+          <span>Adresa:</span><br>
+          Strada 9 mai nr 3<br>
+          Alba Iulia, 510033
+          <hr class="visible-xs">
+        </section>
+        <section id="testimonials" class="col-sm-4">
+          <p>"Utilaje de calitate bine intretinute in stare perfecta de functionare"</p>
+          <p>"Inchiriere rapida si eficienta"</p>
+        </section>
+      </div>
+      <div class="text-center">&copy; Copyright Inchirieri Utilaje 2012</div>
+    </div>
+  </footer>
+
+  <!-- jQuery (Bootstrap JS plugins depend on it) -->
+  <script src="js/jquery-2.1.4.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
